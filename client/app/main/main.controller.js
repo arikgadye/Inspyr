@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('booksApp')
-  .controller('MainCtrl', function ($scope, $http) {
-  	$scope.name="ARIK"
+app
+  .controller('MainCtrl', function ($scope, $http, $location) {
+  	$scope.pageClass = 'page-home';
   });

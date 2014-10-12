@@ -10,4 +10,11 @@ var UserSchema = new Schema({
 	books: []
 });
 
+UserSchema.pre('save', function(next){
+	if (!this.image) {
+		this.image = 'http://wiki.tripwireinteractive.com/images/4/47/Placeholder.png'
+	};
+	next();
+});
+
 module.exports = mongoose.model('User', UserSchema);

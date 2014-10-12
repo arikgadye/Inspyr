@@ -1,0 +1,9 @@
+<h1>{{user.name}}</h1>
+<img class="user-image" ng-src={{user.image}}>
+<h4>Books:</h4>
+<ul>
+	<li ng-repeat="book in user.books">
+		{{book}}
+	</li>
+</ul>
+<a href="#users">Back</a>
