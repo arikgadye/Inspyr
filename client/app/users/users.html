@@ -7,12 +7,10 @@
 		</div>	
 	</nav>
 	<a href="/">Back</a>
+	<div class="col-md4">
+		<h1>hi</h1>
+	</div>
 	<div class='row' ng-animate="'animate'" ng-repeat="rows in users">
-		<div class="col-md-1 users" ng-repeat="user in rows">
-			<div class="container">
-				<h4>{{user.name}}</h4>
-				<a href="/users/{{user._id}}"><img class="user-image" ng-src={{user.image}}></a>
-			</div>
-		</div>
+		<ag-user ng-repeat="user in rows"></ag-user>
 	</div>
 </div>

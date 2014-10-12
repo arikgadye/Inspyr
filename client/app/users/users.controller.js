@@ -1,6 +1,6 @@
 app.controller('UsersCtrl', ['$scope', '$http', function($scope, $http){
 	$http.get('/api/users').success(function(users){
-		$scope.users = parseUsersIntoArray(users, 5);
+		$scope.users = parseUsersIntoArray(users, 4);
 	});
 	var parseUsersIntoArray = function(users, size) {
 		var newArr = [];
