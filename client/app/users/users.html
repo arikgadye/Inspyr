@@ -1,20 +1,17 @@
-<div class="user-background">
-	<div class="container-fluid">
-		<nav class='navbar navbar-inverse'>
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a href='#' class='navbar-brand'>Inspyr</a>
-				</div>	
+<div class="container-fluid">
+	<nav class='navbar navbar-inverse'>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href='#' class='navbar-brand'>Inspyr</a>
 			</div>	
-		</nav>
-	<a href="#">Back</a>
-	<ag-user></ag-user>
-		<div class='row' ng-repeat="rows in users">
-			<div class="col-md-1 users" ng-repeat="user in rows">
-				<div class="container">
-					<h4>{{user.name}}</h4>
-					<a href="/users/{{user._id}}"><img class="user-image" ng-src={{user.image}}></a>
-				</div>
+		</div>	
+	</nav>
+	<a href="/">Back</a>
+	<div class='row' ng-animate="'animate'" ng-repeat="rows in users">
+		<div class="col-md-1 users" ng-repeat="user in rows">
+			<div class="container">
+				<h4>{{user.name}}</h4>
+				<a href="/users/{{user._id}}"><img class="user-image" ng-src={{user.image}}></a>
 			</div>
 		</div>
 	</div>
