@@ -2,6 +2,11 @@
 
 app
 .controller('MainCtrl', function ($scope, $rootScope, $http, $location) {
+  $scope.user = {
+    email: '',
+    password: ''
+  }
+
   $scope.modalOpen = false;
 
   $scope.signUp = function(){

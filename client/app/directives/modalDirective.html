@@ -1,18 +1,18 @@
 <div class="modal-outline" ng-click="closeModal()">
 </div>
 	<div class='sign-up-modal'>
+				<h4 class='close' ng-click="closeModal()">close</h4>
 		<div class="container">
 			<div class="col-md-6">
-				<p ng-click="closeModal()"><a href="">close</a></p>
 				<h3>Sign Up</h3>
-				<form>	
+				<form class='css-form' novalidate name='myForm'>	
 					<div class="form-group">
 						<label>Email</label>
-						<input class='form-control input-lg'>
+						<input type='email' class='form-control input-lg' ng-model="user.email" required>
 					</div>
 					<div class="form-group">
 						<label>Password</label>
-						<input class='form-control input-lg'>
+						<input type='password' class='form-control input-lg' ng-model="user.password" required>
 					</div>
 					<button class='btn btn-success'>Submit</button>
 				</form>
