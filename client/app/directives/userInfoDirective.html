@@ -1,1 +1,10 @@
-<h1>{{currentUser}}</h1>
+<br>
+<br>
+<br>
+<img ng-src={{currentUser.image}} class='showUser'>
+<h2 ng-if="currentUser" class='books'>Favorite Books</h2>
+<ul>
+	<li ng-repeat="book in currentUser.books" class='books'>
+		<h5>{{book}}</h5>
+	</li>
+</ul>

@@ -1,5 +1,5 @@
 .user-background {
-	background-color: #3498db;
+	background-color: #34495e;
 	position: fixed; 
 	top: 0;
 	left: 0;
@@ -23,6 +23,7 @@ ul li {
 	margin-left: 30px;
 	margin-right: 30px;
 	display: inline;
+	color: white !important;
 }
 
 .animate-enter, 
@@ -51,11 +52,25 @@ ul li {
 }
 
 .user-info {
+	background-color: #2c3e50;
 	width: 40em;
 	position: fixed;
 	float: right;
 	left: 58em;
 	margin-top: 3em;
-	border: 1px solid black;
 	height: 50em;
+	border: 3px solid #ecf0f1;
+	border-radius: 100px;
+}
+.width-sm {
+	width: 40em;
+	border: 1px solid blue;
+}
+.showUser {
+	border-radius: 25px;
+	width: 35em;
+	height: 20em;
+}
+.books {
+	color: white;
 }

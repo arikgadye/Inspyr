@@ -9,5 +9,5 @@ app.controller('UsersCtrl', ['$scope', '$http', '$rootScope', 'UserFactory', fun
 		}
 		return newArr;
 	}
-	$scope.currentUser = undefined;
+	$scope.currentUser = null
 }]);

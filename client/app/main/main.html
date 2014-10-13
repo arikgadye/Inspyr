@@ -1,4 +1,4 @@
-<div class="main-background">
+<div ng-class="{'main-background': true}">
 	<div class="container">
 		<br>
 		<br>
@@ -6,10 +6,8 @@
 		<h1>Inspyr.</h1>	
 		<h3>Become your heroes.</h3>
 		<br>
-		<button class='btn btn-success btn-lg'>Sign Up</button>
-		<button class='btn btn-success btn-lg'>Sign In</button>
-		<br>
-		<br>
-		<button class='btn btn-default' ng-click="direction('front'); go('/users')">Get inspired.</button>
+		<button class='btn btn-default btn-lg' ng-click="signUp()">Inspire.</button>
+		<button class='btn btn-default btn-lg' ng-click="direction('front'); go('/users')">Get inspired.</button>
 	</div>
 </div>
+<ag-modal ng-show="modalOpen"></ag-modal>
