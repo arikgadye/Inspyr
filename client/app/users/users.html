@@ -7,10 +7,15 @@
 		</div>	
 	</nav>
 	<a href="/">Back</a>
-	<div class="col-md4">
-		<h1>hi</h1>
+	{{currentUser}}
+	<div class="col-md-6 user-info">
+		<div class="col-md-6">
+			<ag-userinfo></ag-userinfo>
+		</div>
 	</div>
-	<div class='row' ng-animate="'animate'" ng-repeat="rows in users">
-		<ag-user ng-repeat="user in rows"></ag-user>
+	<div class="col-md-6">
+		<div class='row' ng-animate="'animate'" ng-repeat="rows in users">
+			<ag-user ng-repeat="user in rows" ng-hover="showUser(user)" user="user"></ag-user>
+		</div>
 	</div>
 </div>

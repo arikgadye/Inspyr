@@ -1,4 +1,4 @@
-app.controller('UsersCtrl', ['$scope', '$http', function($scope, $http){
+app.controller('UsersCtrl', ['$scope', '$http', '$rootScope', 'UserFactory', function($scope, $http, $rootScope, UserFactory){
 	$http.get('/api/users').success(function(users){
 		$scope.users = parseUsersIntoArray(users, 4);
 	});
@@ -9,5 +9,5 @@ app.controller('UsersCtrl', ['$scope', '$http', function($scope, $http){
 		}
 		return newArr;
 	}
-	$scope.pageClass = "page-users";
+	$scope.currentUser = undefined;
 }]);
