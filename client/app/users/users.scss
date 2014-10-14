@@ -14,41 +14,11 @@
 ul li {
 	display: block;
 }
-.user-image {
-	border-radius: 200px;
-	width: 130px;
-	height: 120px;
-}
 .users {
 	margin-left: 30px;
 	margin-right: 30px;
 	display: inline;
 	color: white !important;
-}
-
-.animate-enter, 
-.animate-leave
-{ 
-    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    text-overflow: clip;
-    white-space:nowrap;
-} 
- 
-.animate-leave.animate-leave-active,
-.animate-enter {
-    opacity: 0;
-    width: 0px;
-    height: 0px;
-}
- 
-.animate-enter.animate-enter-active, 
-.animate-leave {
-    opacity: 1;
-    width: 150px;
-    height: 30px;
 }
 
 .user-info {
@@ -73,4 +43,49 @@ ul li {
 }
 .books {
 	color: white;
+}
+
+.user-image {
+	border-radius: 200px;
+	width: 130px;
+	height: 120px;
+}
+
+.user-image.ng-enter {
+	transition: 1s linear all;
+	opacity: 0;
+}
+
+.user-image.ng-enter-active {
+	opacity: 1;
+}
+
+.pop.ng-enter,
+.pop.ng-move { 
+	transition: .2s linear all;
+	opacity: 0;
+	transform:scale(1.15);
+}
+
+.pop.ng-enter.ng-enter-active,
+.pop.ng-move.ng-move-active { 
+	opacity: 1;
+}
+.pop.ng-leave {
+	transition: 0.1s linear all;
+	opacity: 1;
+}
+.pop.ng-leave.ng-leave-active {
+	opacity: 0;
+}
+.navbar-nav li {
+	font-size: 17px;
+	font-family: Georgia;
+	padding-left: 10px;
+}
+.navbar-nav {
+	margin-left: 6em;
+}
+.right {
+	float: right;
 }

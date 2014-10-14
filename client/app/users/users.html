@@ -1,19 +1,13 @@
 <div class="user-background"></div>
 <div class="container-fluid">
-	<nav class='navbar navbar-inverse'>
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a href='#' class='navbar-brand'>Inspyr</a>
-			</div>	
-		</div>	
-	</nav>
+	<div ng-include="'components/navbar.html'"></div>
 	<div class="col-md-6 user-info">
 		<div class="col-md-6">
 			<ag-userinfo></ag-userinfo>
 		</div>
 	</div>
 	<div class="col-md-6">
-		<div class='row' ng-animate="'animate'" ng-repeat="rows in users">
+		<div class='row pop' ng-repeat="rows in users">
 			<ag-user ng-repeat="user in rows" ng-hover="showUser(user)" user="user"></ag-user>
 		</div>
 	</div>

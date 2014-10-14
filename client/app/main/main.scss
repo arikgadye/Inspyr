@@ -38,36 +38,6 @@
 .form-control {
 	width: 50%;
 }
-.view-slide.ng-enter {
-	opacity: 0;
-}
-.view-slide.ng-enter.ng-enter-active {
-	top:0;
-	left:0;
-	opacity: 1;
-}
-.view-slide.ng-leave.ng-leave-active{
-	top:5px;
-	left:5px;
-	opacity:1;
-}
-.view-slide.ng-leave{
-	top:0;
-	left:0;
-	opacity:0;
-}
-.view-slide.ng-enter {
-	transition: all 1s ease;
-	-webkit-transition:all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	
-	opacity:0.5;
-	position:relative;
-	opacity:0;
-	top:10px;
-	left:20px;
-}
 .btn .btn-default {
 	background-color: lightblue !important;
 }
@@ -81,10 +51,16 @@
 	padding-bottom: 30px;
 }
 
- .css-form input.ng-invalid.ng-dirty {
- 		border: 4px solid #c0392b;
-  }
+.css-form input.ng-invalid.ng-dirty {
+	border: 4px solid #c0392b;
+}
 
-  .css-form input.ng-valid.ng-dirty {
-  	border: 4px solid #2ecc71;
-  }
+.css-form input.ng-valid.ng-dirty {
+	border: 4px solid #2ecc71;
+}
+
+.navbar-brand.cursive {
+	font-family: 'Dancing Script';
+	font-size: 40px;
+
+}
