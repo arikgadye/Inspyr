@@ -1,14 +1,17 @@
 <div class="user-background"></div>
 <div class="container-fluid">
 	<div ng-include="'components/navbar.html'"></div>
-	<div class="col-md-6 user-info">
-		<div class="col-md-6">
-			<ag-userinfo></ag-userinfo>
-		</div>
+	<div class="container">
+		<div class="col-md-12">
+			<div class="row">
+			<h1 class='head'>Popular Inspirations</h1>
+			</div>
 	</div>
-	<div class="col-md-6">
+	</div>
+	<div class="col-md-12">
 		<div class='row pop' ng-repeat="rows in users">
 			<ag-user ng-repeat="user in rows" ng-hover="showUser(user)" user="user"></ag-user>
 		</div>
 	</div>
 </div>
+<ag-modal ng-show="modalOpen"></ag-modal>

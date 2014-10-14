@@ -36,7 +36,7 @@
 }
 
 .form-control {
-	width: 50%;
+	// width: 50%;	
 }
 .btn .btn-default {
 	background-color: lightblue !important;
@@ -62,5 +62,18 @@
 .navbar-brand.cursive {
 	font-family: 'Dancing Script';
 	font-size: 40px;
-
+}
+.navbar-nav li {
+	font-size: 17px;
+	font-family: Georgia;
+	padding-left: 10px;
+}
+.navbar-nav {
+	margin-left: 6em;
+}
+.navbar {
+	background: rgba(0,0,0,0.5);
+}
+li input {
+	margin-top: 9px;
 }

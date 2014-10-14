@@ -4,15 +4,13 @@ directive('agUser', ['UserFactory', '$rootScope', function(UserFactory, $rootSco
 		restrict: 'EA',
 		transclude: true,
 		templateUrl: '/app/directives/userDirective.html',
-		controller: function($scope, $rootScope){
-			$scope.showUser = function(user){
-			}
-		},
 		link: function(scope, element, attrs) {
 			element.find('img').on('mouseenter', function(){
-				$rootScope.$broadcast('show:user', scope.user)
+				scope.hovered = true;
+				scope.$apply();
 			}).on('mouseleave', function(){
-				scope.currentUser = null;
+				scope.hovered = false;
+				scope.$apply();
 			});
 		}
 	};
